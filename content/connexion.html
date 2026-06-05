@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechShop - Connexion</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">TechShop</div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="produits.html">Produits</a></li>
+                <li><a href="commande.html">Commande</a></li>
+                <li><a href="connexion.html" class="active">Connexion</a></li>
+                <li><a href="inscription.html">Inscription</a></li>
+            </ul>
+            <div class="burger">☰</div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h1>Se connecter</h1>
+            <form id="connexionForm">
+                <div class="form-group">
+                    <label for="loginEmail">Email :</label>
+                    <input type="email" id="loginEmail" name="loginEmail" required>
+                    <small class="error-message" id="loginEmailError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="loginPassword">Mot de passe :</label>
+                    <input type="password" id="loginPassword" name="loginPassword" required>
+                    <small class="error-message" id="loginPasswordError"></small>
+                </div>
+
+                <button type="submit" class="btn">Se connecter</button>
+                <p class="form-link">Pas encore de compte ? <a href="inscription.html">S'inscrire</a></p>
+            </form>
+            <div id="connexionMessage"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 TechShop - Tous droits réservés</p>
+    </footer>
+
+    <script src="../javascript/script.js"></script>
+</body>
+</html>
